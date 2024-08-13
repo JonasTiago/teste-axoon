@@ -1,0 +1,22 @@
+.event-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .event-image {
+    margin-right: 20px;
+  }
+  
+  .event-info {
+    max-width: 400px;
+  }
+  
+  .event-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .event-info p {
+    margin: 5px 0;
+  }
+  

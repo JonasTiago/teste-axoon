@@ -1,0 +1,32 @@
+.server-list {
+    padding: 20px;
+  }
+  
+  .server-list h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .server-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .server-list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .server-list li:hover {
+    background-color: #ddd;
+  }
+  
+  .server-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  

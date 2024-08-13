@@ -1,0 +1,49 @@
+.camera-list {
+    padding: 20px;
+  }
+  
+  .camera-list h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .camera-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .camera-list li {
+    background-color: #eaeaeaf6;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    width: 180px;
+  }
+
+  .camera-list li:hover {
+    background-color: #eaeaea6e;
+  }
+  
+  .camera-list .status {
+    font-weight: bold;
+  }
+  
+  .camera-list .online {
+    color: green;
+  }
+  
+  .camera-list .offline {
+    color: red;
+  }
+
+  .camera-list span {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  
