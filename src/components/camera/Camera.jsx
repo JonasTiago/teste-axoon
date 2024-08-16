@@ -47,8 +47,6 @@ export default function Camera() {
   }
 
   async function fetchEvents() {
-    // archive/events/detectors/LAPTOP-3UEDE0C4/DeviceIpint.1/
-    // SourceEndpoint.video:0:0/20240808T170411.938000/20240808T170415.728000
     const API_URL = process.env.REACT_APP_BACK_END_URL;
     try {
       const {data} = await axios.get(`${API_URL}/archive/events/detectors/${videosourceid}/past/future`,{
@@ -65,6 +63,7 @@ export default function Camera() {
       },
       });
       const events = data.events
+      console.log(events)
       setEvents(events);
     } catch (error) {
       console.log(error);
@@ -80,18 +79,18 @@ export default function Camera() {
     <div className="camera-detail">
       <div className="camera-stream">
         <h3>Camera Live <LiveIndicator />  {cameraUrl.name}</h3>
-        <LiveStream camera={videosourceid} />
+        <LiveStream url={`/live/media/${videosourceid}?w=650&h=400&enable_token_auth=1&valid_token_hours=1`} />
       </div>
       <div className="camera-events">
         <h3>Camera Events</h3>
         <ul>
           {events.length > 0 ? events.filter(event => event.alertState === 'began').map( event => (
-            <Link to={'/event'} state={event}>
-            <li key={event.id} className="eventSigle">
-              <strong>Type:</strong> {event.type}
-              <strong>Timestamp:</strong> {event.timestamp}
-              <Img videosourceid={videosourceid} event={event} />
-            </li>
+            <Link to={'/event'} state={event} key={1}>
+              <li key={event.id} className="eventSigle">
+                <strong>Type:</strong> {event.type}
+                <strong>Timestamp:</strong> {event.timestamp}
+                <Img videosourceid={videosourceid} event={event} />
+              </li>
             </Link>
           )): ''}
         </ul>

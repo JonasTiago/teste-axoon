@@ -10,3 +10,19 @@
     margin-bottom: 10px;
   }
   
+
+  .camera-stream {
+    margin-bottom: 30px;
+  }
+  
+  .camera-stream h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .camera-stream video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #333;
+  }

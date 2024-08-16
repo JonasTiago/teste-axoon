@@ -18,7 +18,7 @@ const Img = ({videosourceid, event, w=120, h=80 }) => {
 
   const fetchSnapshot = async () => {
     const url = `${API_URL}/archive/media/${videosourceid}/${event.timestamp}?w=${w}&h=${h}`;
-    console.log(url);
+
 
     try {
       const response = await axios.get(url, {
