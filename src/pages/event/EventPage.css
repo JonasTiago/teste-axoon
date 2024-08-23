@@ -21,7 +21,7 @@
   }
   
   .camera-stream video {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #333;

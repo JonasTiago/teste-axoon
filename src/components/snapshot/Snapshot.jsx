@@ -14,7 +14,7 @@ const Snapshot = ({ camera }) => {
 
     // Cleanup: Revoke Object URL quando o componente for desmontado
     
-  }, [camera]);
+  }, []);
 
   const fetchSnapshot = async () => {
     const cameraPath = camera.accessPoint.replace("hosts/", "");

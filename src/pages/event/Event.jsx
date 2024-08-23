@@ -5,7 +5,7 @@ import VideoPlayer from './components/VideoPlayer';
 import './EventPage.css';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import LiveStream from '../liveStream/LiveStream';
+import LiveStream from '../../components/liveStream/LiveStream';
 
 const EventPage = () => {
   const location = useLocation();
@@ -48,7 +48,8 @@ const EventPage = () => {
       : <h1>Evento</h1>}
       <h3>Pré-Evento</h3>
       <div className="camera-stream">
-        <LiveStream  url={`/archive/media/${event.source.replace("hosts/", "")}/${event.timestamp}?speed=1&enable_token_auth=1&valid_token_hours=1`} />
+      {/* <LiveStream  url={`${event.timestamp}`} /> */}
+      <LiveStream  url={`/archive/media/${event.source.replace("hosts/", "")}/${event.timestamp}?speed=1&enable_token_auth=1&valid_token_hours=1`} />
       </div>
       
     </div>

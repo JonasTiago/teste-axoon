@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useLocation } from "react-router-dom";
-import LiveStream from "../liveStream/LiveStream";
+import LiveStream from "../../components/liveStream/LiveStream";
 import Img from './Img'
 
 import React from 'react';
@@ -49,7 +49,7 @@ export default function Camera() {
   async function fetchEvents() {
     const API_URL = process.env.REACT_APP_BACK_END_URL;
     try {
-      const {data} = await axios.get(`${API_URL}/archive/events/detectors/${videosourceid}/past/future`,{
+      const {data} = await axios.get(`${API_URL}/archive/events/detectors/${videosourceid}/future/past`,{
         auth: {
           username: "root",
           password: "Big4dev2024"

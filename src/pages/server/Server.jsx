@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import webSocket from "../../WebSocket/WebSocket.ts";
 import './style.css';
-import Snapshot from "../snapshot/Snapshot.jsx";
+import Snapshot from "../../components/snapshot/Snapshot";
 
 const API_URL = process.env.REACT_APP_BACK_END_URL;
 
