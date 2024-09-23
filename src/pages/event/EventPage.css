@@ -1,28 +1,32 @@
 .event-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .event-page h3 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
 
-  .camera-stream {
-    margin-bottom: 30px;
-  }
-  
-  .camera-stream h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .camera-stream video {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #333;
-  }
+.event-page h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.camera-stream {
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.camera-stream h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.camera-stream img,
+video {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+input {
+  margin: 10px 0;
+}

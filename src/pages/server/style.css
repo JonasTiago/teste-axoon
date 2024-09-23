@@ -1,24 +1,78 @@
+h1 {
+  padding: 0 20px;
+}
+
 .server-list {
-    padding: 20px;
-  }
-  
-  .server-list h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .server-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.server-list > li {
+  list-style: none;
+  background-color: #efefefe8;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.server-list > li > h3 {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.camera-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.camera-item {
+  list-style: none;
+  background-color: darkgray;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 0.5rem;
+  position: relative;
+}
+
+.camera-item:hover {
+  background-color: rgba(169, 169, 169, 0.726);
+  transition: background-color 0.3s;
+}
+
+.camera-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/*
+
+  .server-list ul > span{
     list-style: none;
-    padding: 0;
+    padding: 50px;
+    font-size: 50px;
   }
   
-  .server-list li {
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
+  
   
   .server-list li:hover {
     background-color: #ddd;
@@ -28,5 +82,4 @@
     text-decoration: none;
     color: #333;
     font-weight: bold;
-  }
-  
+  } */
