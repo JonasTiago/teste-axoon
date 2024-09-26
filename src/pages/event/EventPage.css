@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-around;
 }
 
 .event-page h3 {
@@ -12,7 +14,7 @@
 
 .camera-stream {
   margin-bottom: 30px;
-  width: 60%;
+  width: 50%;
 }
 
 .camera-stream h3 {
@@ -29,4 +31,9 @@ video {
 
 input {
   margin: 10px 0;
+}
+
+.event-export {
+  width: 30%;
+  padding: 50px;
 }
